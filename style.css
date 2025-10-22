@@ -1,0 +1,244 @@
+/* --- TEMA COLORS (Inspired by letsdrink.xyz) --- */
+:root {
+    --color-primary: #17A242; /* Vibrant Green */
+    --color-text-dark: #212529; /* Near Black */
+    --color-cta-main: #FFC107; /* Yellow/Orange Accent */
+    --color-background-light: #F8F9FA; /* Light Gray */
+    --color-background-white: #FFFFFF;
+    --color-footer: #212529;
+}
+
+/* --- RESET & TYPOGRAPHY --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text-dark);
+    line-height: 1.6;
+    background-color: var(--color-background-white);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* --- HERO SECTION (High Contrast) --- */
+.hero-section {
+    background-color: var(--color-primary);
+    color: var(--color-background-white);
+    text-align: center;
+    padding: 100px 20px 80px 20px;
+}
+
+.hero-section .tag-line {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.1;
+    text-transform: uppercase; /* Gaya letsdrink.xyz */
+}
+
+.hero-section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.hero-section .sub-headline-bold {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.hero-section .info-text {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+/* --- CTA BUTTONS --- */
+.cta-button {
+    display: inline-block;
+    padding: 18px 40px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 8px; /* Rounded corners */
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button.primary {
+    background-color: var(--color-cta-main); /* Yellow Accent */
+    color: var(--color-text-dark);
+    font-size: 1.1rem;
+    border: none;
+}
+
+.cta-button.primary:hover {
+    background-color: #e0ac00;
+    transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+    background-color: var(--color-text-dark); /* Dark Button */
+    color: var(--color-background-white);
+    font-size: 1.1rem;
+    border: none;
+}
+
+.cta-button.secondary:hover {
+    background-color: var(--color-primary);
+}
+
+/* --- SECTION UMUM --- */
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.light-section {
+    background-color: var(--color-background-light);
+}
+
+/* --- BAGIAN 1: CARD GRID --- */
+.card-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    text-align: left;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--color-background-white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    flex: 1 1 300px;
+    border-top: 5px solid var(--color-primary);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card .icon {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    display: block;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--color-text-dark);
+    font-weight: 700;
+}
+
+/* --- BAGIAN 2: MATERI LIST --- */
+.materi-list {
+    list-style: none;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.materi-list li {
+    background-color: var(--color-background-white);
+    padding: 25px 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.materi-list h4 {
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+/* --- FOOTER CTA SECTION --- */
+.footer-cta-section {
+    background-color: var(--color-text-dark); /* Dark background for emphasis */
+    color: var(--color-background-white);
+    padding: 60px 0;
+}
+
+.footer-cta-section .cta-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: var(--color-cta-main);
+}
+
+.footer-cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* --- FOOTER KETERANGAN (Bottom Bar) --- */
+footer {
+    background-color: var(--color-footer);
+    color: #ADB5BD;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 5px solid var(--color-primary);
+}
+
+footer p {
+    margin: 3px 0;
+}
+
+/* --- RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section .sub-headline-bold {
+        font-size: 1.8rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .footer-cta-section .cta-title {
+        font-size: 1.8rem;
+    }
+    .card-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .cta-button {
+        padding: 15px 30px;
+    }
+}
